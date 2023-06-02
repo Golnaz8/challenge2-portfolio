@@ -1,0 +1,44 @@
+nav {
+    height: 60px;
+    width: max;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 10px solid navy;  
+}
+nav a {
+    text-decoration: none;
+    margin: 20px;
+}
+.main-header {
+    margin-left: 20px;
+  }
+h1::before {
+    font-family: Impact;
+    content: "\262A";
+    color: #772014;
+    margin-right: 5px;
+}
+main h2{
+    font-weight: bolder;
+    margin-left: 55px;
+}
+figure img{
+    display: inline;
+    float: left;
+    height:100px;
+    width: 150px;
+}
+main section p {
+    font-family: serif;
+    font-size: medium;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+}
+main section p::first-letter {
+    font-size: larger;
+    color: red;
+    font-weight: 900;
+}
