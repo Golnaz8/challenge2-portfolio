@@ -4,7 +4,7 @@
 .nav-header {
     height: 60px;
     width: max;
-    background-color: aqua;
+    background-color: #b9c6ae;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,8 +30,9 @@ main h2{
 figure img{
     display: inline;
     float: left;
-    height:100px;
-    width: 150px;
+    height:120px;
+    width: 100px;
+    margin: 5px;
 }
 main section p {
     font-family: serif;
@@ -42,7 +43,7 @@ main section p {
 }
 main section p::first-letter {
     font-size: larger;
-    color: red;
+    color: green;
     font-weight: 900;
 }
 .second-part {
@@ -64,6 +65,7 @@ aside {
     justify-content: center;
  } 
  .different{
+    position: relative;
     border-radius: 10px;
     flex: 0 0 800px;
     padding: 10px;
@@ -72,11 +74,9 @@ aside {
     width: 100%;
     border: 1px solid black;
     border-radius: 10px;
- }
- .diffetenr a {
-    
- }
+ }                     
  .same {
+    position: relative;
     border-radius: 10px;
     flex: 0 0 400px;
     padding: 10px;
@@ -86,3 +86,14 @@ aside {
     border-radius: 10px;
     border: 1px solid black;
  }
+ .bottom-right{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: black;
+    border: 1px solid white;
+    border-radius: 20px 0 0 20px;
+    background-color: white;
+    padding: 10px;
+  }
+
