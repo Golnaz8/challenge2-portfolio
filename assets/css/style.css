@@ -1,22 +1,30 @@
 * {
     box-sizing: border-box;
   }
-.nav-header {
-    height: 60px;
+.top-header,
+.nav-footer {
     width: max;
     background-color: #b9c6ae;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 10px solid navy;  
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px; 
 }
-.nav-header a {
+nav a {
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
+    color: black;
 }
-.main-header {
-    margin-left: 20px;
-  }
+nav a:hover{
+    color: red;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: beige;
+    line-height: 1.5;
+}
 h1::before {
     font-family: Impact;
     content: "\263A";
@@ -25,14 +33,14 @@ h1::before {
 }
 main h2{
     font-weight: bolder;
-    margin-left: 55px;
+    margin-left: 25px;
 }
 figure img{
     display: inline;
     float: left;
     height:120px;
     width: 100px;
-    margin: 5px;
+    margin: 10px;
 }
 main section p {
     font-family: serif;
@@ -40,6 +48,7 @@ main section p {
     font-weight: 300;
     line-height: 1.5;
     text-align: justify;
+    margin: 20px;
 }
 main section p::first-letter {
     font-size: larger;
@@ -67,25 +76,27 @@ aside {
  .different{
     position: relative;
     border-radius: 10px;
-    flex: 0 0 800px;
+    flex: 0 0 80%;
     padding: 10px;
  }
- .different img {
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 10px;
- }                     
  .same {
     position: relative;
     border-radius: 10px;
-    flex: 0 0 400px;
+    flex: 0 0 40%;
     padding: 10px;
  }
+ .different img,
  .same img {
     width: 100%;
-    border-radius: 10px;
     border: 1px solid black;
+    border-radius: 10px;
+ } 
+ .same img:hover{
+    opacity: 0.7;
  }
+ .different img:hover{
+    opacity: 0.7;
+ }                    
  .bottom-right{
     position: absolute;
     bottom: 20px;
@@ -96,4 +107,18 @@ aside {
     background-color: white;
     padding: 10px;
   }
+  @media screen and (max-width: 768px){
+    .same {
+        flex: 0 0 60%;
+    }
+  }
+  @media screen and (max-width: 576px){
+    nav {
+        flex-direction: column;
+    }
+    .bottom-right {
+        padding: 1px;
+    }
+  }
+
 

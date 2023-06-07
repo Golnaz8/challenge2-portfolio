@@ -4,49 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Golnaz Berenjian Portfolio</title>
 </head>
 <body>
     <header>
-        <nav class="nav-header">
-            <h1 class="main-header">Futuristic</h1>
-            <ul>
-                <ui>
-                    <a href="#" alt="about me link">About Me</a>
-                </ui>
-                <ui>
-                    <a href="#" alt="works link">Works</a>
-                </ui>
-                <ui>
-                    <a href="#" alt="contact me link">Contact Me</a>
-                </ui>
-                <ui>
-                    <a href="#" alt="resume link">Resume</a>
-                </ui>
-            </ul>
+        <section class="top-header">
+            <h1>Futuristic</h1>
+        </section>
+        <nav>
+            <a href="#section-one" alt="about me link">About Me</a>
+            <a href="#section-two" alt="works link">Works</a>
+            <a href="#" alt="contact me link">Contact Me</a>
+            <a href="#" alt="resume link">Resume</a>
         </nav>
     </header>
     <main>
-        
+        <!-- first part of main section -->
         <section>
-            <h2>About Me</h2>
+            <br>
+            <br>
+            <h2 id="section-one">About Me</h2>
             <figure>
                 <img src="./assets/images/Photo.JPG" alt="a random image">
             </figure>
             <section>
                 <br>
-                
-                <p>I am a people person. I love meeting new people and learning about their lives and their backgrounds. I can almost always find common ground with strangers, and I like making people feel comfortable in my presence. This skill is especially helpful when kicking off projects with new clients. In my previous job, my clients' customer satisfaction scores were 15% over the company average.</p>
+                <p>My name is <strong>Golnaz Berenjian</strong>. I am a people person. I love meeting new people and learning about their lives and their backgrounds. I can almost always find common ground with strangers, and I like making people feel comfortable in my presence. This skill is especially helpful when kicking off projects with new clients. In my previous job, my clients' customer satisfaction scores were 15% over the company average.</p>
             </section>
         </section>
         <br>
         <br>
-
+        <!-- second part of main section. !!Flexbox!! -->
         <main class="second-part">
             <!-- Sidebar -->
             <aside>
-              <h2>Work</h2>
+              <h2 id="section-two">Works</h2>
             </aside>
             <!-- Product Cards -->
             <div class="applications">
@@ -77,12 +71,18 @@
               <section class="same">
                 <a href="#" alt="educational application link">
                     <img src="./assets/images/image.5.png" alt="a random image educational application">
-                    <div class="bottom-right">edicational</div>
+                    <div class="bottom-right">educational</div>
                 </a>
               </section>
             </div>
           </main>
     </main>
-    
+    <br>
+    <br>
+    <footer>
+        <nav class="nav-footer">
+            <p></p>
+        </nav>
+    </footer>
 </body>
 </html>
