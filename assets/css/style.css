@@ -1,19 +1,43 @@
 * {
     box-sizing: border-box;
   }
-.top-header,
-.nav-footer {
+  :root {
+    --main: #b9c6ae;
+    --green: #13621f;
+  }
+.name {
+    line-height: 1.5;
+    padding: 20px;
+    text-align: left;
+    font-family: cursive;
+    font-weight: 500;
+    background-color: beige;
+}
+.name p::before {
+    content: "\273A";
+}  
+.name p::after {
+    content: "\273A";
+}
+.top-header {
     width: max;
-    background-color: #b9c6ae;
+    background-color: var(--main);
     align-items: center;
     text-align: center;
     line-height: 1.5;
-    padding: 20px; 
+    padding: 15px; 
+    color: var(--green);
+    font-size: 200%;
 }
 nav a {
     text-decoration: none;
-    margin: 10px;
+    margin: 20px;
     color: black;
+}
+header nav {
+    justify-content: flex-end;
+    background-color: beige;
+
 }
 nav a:hover{
     color: red;
@@ -22,37 +46,46 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: beige;
     line-height: 1.5;
 }
 h1::before {
     font-family: Impact;
     content: "\263A";
-    color: #772014;
+    color: var(--green);
     margin-right: 5px;
 }
-main h2{
+h2 {
+    font-size: 150%;
     font-weight: bolder;
-    margin-left: 25px;
+    margin-left: 10%;
+    color: var(--green);
 }
-figure img{
+.first-part {
+    display: flex;
+    flex-wrap: wrap;
+}
+.info figure img{
     display: inline;
     float: left;
     height:120px;
     width: 100px;
-    margin: 10px;
+    margin-right: 8px;
+    margin-left: 11%;
+    
 }
-main section p {
+.info p {
     font-family: serif;
     font-size: medium;
     font-weight: 300;
     line-height: 1.5;
     text-align: justify;
-    margin: 20px;
+    margin-right: 12%;
+    margin-left: 11%;
+    
 }
 main section p::first-letter {
     font-size: larger;
-    color: green;
+    color: var(--green);
     font-weight: 900;
 }
 .second-part {
@@ -61,10 +94,25 @@ main section p::first-letter {
 }
 aside {
     flex: 1;
-    background-color: #b9c6ae;
-    padding-right: 20px;
+    width: 25%;
+    background-color: white;
+    padding-right: 2%;
     text-align: right;
-    border-right: 3px solid black;
+    border-right: 7px solid var(--green);
+}
+.info {
+    flex: 4;
+}
+.nav-footer .info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-footer a {
+    font-size: large;
+    font-weight: 900;
+    font-family: cursive;
 }
  .applications {
     flex: 4;
@@ -118,6 +166,17 @@ aside {
     }
     .bottom-right {
         padding: 1px;
+    }
+    .nav-footer .info{
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
   }
 
