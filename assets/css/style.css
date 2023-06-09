@@ -1,10 +1,9 @@
-* {
-    box-sizing: border-box;
-  }
-  :root {
+/* defines a global color variable */
+:root {
     --main: #b9c6ae;
     --green: #13621f;
-  }
+}
+/* defines style for the first line name */
 .name {
     line-height: 1.5;
     padding: 20px;
@@ -19,6 +18,7 @@
 .name p::after {
     content: "\273A";
 }
+/* defines style for website header */
 .top-header {
     width: max;
     background-color: var(--main);
@@ -28,6 +28,19 @@
     padding: 15px; 
     color: var(--green);
     font-size: 200%;
+}
+h1::before {
+    font-family: Impact;
+    content: "\263A";
+    color: var(--green);
+    margin-right: 5px;
+}
+/* defines style for header and footer navbar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    line-height: 1.5;
 }
 nav a {
     text-decoration: none;
@@ -42,24 +55,14 @@ header nav {
 nav a:hover{
     color: red;
 }
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    line-height: 1.5;
-}
-h1::before {
-    font-family: Impact;
-    content: "\263A";
-    color: var(--green);
-    margin-right: 5px;
-}
+/* defines style for aside header */
 h2 {
     font-size: 150%;
     font-weight: bolder;
     margin-left: 10%;
     color: var(--green);
 }
+/* this main has two parts, this is for the top part*/
 .first-part {
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +74,6 @@ h2 {
     width: 100px;
     margin-right: 8px;
     margin-left: 11%;
-    
 }
 .info p {
     font-family: serif;
@@ -88,6 +90,7 @@ main section p::first-letter {
     color: var(--green);
     font-weight: 900;
 }
+/* style for the second part of main */
 .second-part {
     display: flex;
     flex-wrap: wrap;
@@ -103,17 +106,7 @@ aside {
 .info {
     flex: 4;
 }
-.nav-footer .info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.nav-footer a {
-    font-size: large;
-    font-weight: 900;
-    font-family: cursive;
-}
+/* works applications container */
  .applications {
     flex: 4;
     background-color: white;
@@ -121,12 +114,14 @@ aside {
     flex-wrap: wrap;
     justify-content: center;
  } 
+ /* first box that should be bigger */
  .different{
     position: relative;
     border-radius: 10px;
     flex: 0 0 80%;
     padding: 10px;
  }
+ /* other boxer which have same size */
  .same {
     position: relative;
     border-radius: 10px;
@@ -144,7 +139,8 @@ aside {
  }
  .different img:hover{
     opacity: 0.7;
- }                    
+ }   
+ /* style for the notes on images */
  .bottom-right{
     position: absolute;
     bottom: 20px;
@@ -155,6 +151,19 @@ aside {
     background-color: white;
     padding: 10px;
   }
+  /* style for footer navbar */
+  .nav-footer .info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-footer a {
+    font-size: large;
+    font-weight: 900;
+    font-family: cursive;
+}
+/* style for different screen sizes */
   @media screen and (max-width: 768px){
     .same {
         flex: 0 0 60%;
