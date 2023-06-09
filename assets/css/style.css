@@ -107,41 +107,41 @@ aside {
     flex: 4;
 }
 /* works applications container */
- .applications {
+.applications {
     flex: 4;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
- } 
+} 
  /* first box that should be bigger */
- .different{
+.different{
     position: relative;
     border-radius: 10px;
     flex: 0 0 80%;
     padding: 10px;
- }
+}
  /* other boxer which have same size */
- .same {
+.same {
     position: relative;
     border-radius: 10px;
     flex: 0 0 40%;
     padding: 10px;
- }
+}
  .different img,
  .same img {
     width: 100%;
     border: 1px solid black;
     border-radius: 10px;
- } 
- .same img:hover{
+} 
+.same img:hover{
     opacity: 0.7;
- }
- .different img:hover{
+}
+.different img:hover{
     opacity: 0.7;
- }   
+}   
  /* style for the notes on images */
- .bottom-right{
+.bottom-right{
     position: absolute;
     bottom: 20px;
     right: 10px;
@@ -150,18 +150,21 @@ aside {
     border-radius: 20px 0 0 20px;
     background-color: white;
     padding: 10px;
-  }
+}
   /* style for footer navbar */
-  .nav-footer .info {
+.nav-footer .info {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 .nav-footer a {
-    font-size: large;
+    font-size: 150%;
     font-weight: 900;
-    font-family: cursive;
+    font-family: monospace;
+}
+#section-three {
+    padding-top: 5%;
 }
 /* style for different screen sizes */
   @media screen and (max-width: 768px){
