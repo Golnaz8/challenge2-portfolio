@@ -51,10 +51,13 @@ All images that used, captured from: https://bing.com/
 
 The following image shows the web application's appearance:
 
+![Web capture_10-6-2023_161059_](https://github.com/Golnaz8/challenge2-portfolio/assets/133593128/e2fe12b2-1e70-4295-98be-a51b92f5c1f8)
+
 
 
 
 ## github pages link
+
 https://golnaz8.github.io/challenge2-portfolio/
 
 
